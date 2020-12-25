@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.Android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+		<TextView
+			android:text="Sensor: ON"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/cross"
+			android:id="@+id/cs"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:text="X Position: Null"
+				android:id="@+id/tx"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"/>
+
+			<TextView
+				android:text="Y Position: Null"
+				android:id="@+id/ty"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"/>
+
+			<TextView
+				android:text="Z Position: Null"
+				android:id="@+id/tz"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
